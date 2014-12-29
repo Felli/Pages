@@ -83,7 +83,7 @@ class ETPlugin_Pages extends ETPlugin {
 	
 	public function handler_init($sender) 
 	{
-               	ET::$controller->addCSSFile($this->getResource("pages.css"), true);
+               	ET::$controller->addCSSFile($this->resource("pages.css"), true);
 
 		$model = ET::getInstance("pagesModel");
 		$pages = $model->get();
